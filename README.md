@@ -1,5 +1,5 @@
 # vuejs_toggle
-Simple VueJS toggle button, made with TailwindCSS.
+Simple VueJS toggle button.
 
 It has been inspired by [this article by ALEXANDRU STRATULAT](https://sandulat.com/blog/custom-switch-with-tailwind-and-vue), so check it out if you wish to understand how it works. 
 
