@@ -31,7 +31,7 @@
   <div
     :style="{ backgroundColor: value ? colorOK : colorKO, width: width, height: height }"
     class="vue-toggle"
-    @click="value = !value"
+    @click="$emit('change', !value)"
   >
     <input type="checkbox" name="foo" id="bar" value="baz" :checked="value" />
     <div
