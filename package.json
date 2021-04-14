@@ -1,8 +1,8 @@
 {
-  "name": "vue-toggle",
+  "name": "@2alheure/toggle",
   "version": "1.0.0",
   "description": "A Simple VueJS toggle button, made with TailwindCSS.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "vue serve src/Toggle.vue"
   },
