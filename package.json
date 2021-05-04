@@ -1,8 +1,8 @@
 {
-  "name": "@2alheure/toggle",
+  "name": "@2alheure/vue-toggle",
   "version": "1.0.0",
-  "description": "A Simple VueJS toggle button, made with TailwindCSS.",
-  "main": "./dist/index.js",
+  "description": "A Simple VueJS toggle button",
+  "main": "./src/Toggle.vue",
   "scripts": {
     "test": "vue serve src/Toggle.vue"
   },
@@ -11,13 +11,13 @@
     "url": "git+https://github.com/2alheure/vuejs_toggle.git"
   },
   "keywords": [
-    "Vue",
+    "Vue.js",
     "Button",
     "Component",
     "Toggle"
   ],
-  "author": "2alheure",
-  "license": "MIT",
+  "author": "2alheure <contact@2alheure.fr>",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/2alheure/vuejs_toggle/issues"
   },

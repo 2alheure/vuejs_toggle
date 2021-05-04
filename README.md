@@ -1,13 +1,41 @@
-# vuejs_toggle
-Simple VueJS toggle button.
+# Vue.js Toggle button
+A simple Vue.js toggle button.
+
+- [Vue.js Toggle button](#vuejs-toggle-button)
+	- [Simple usage](#simple-usage)
+	- [Props](#props)
 
 It has been inspired by [this article by ALEXANDRU STRATULAT](https://sandulat.com/blog/custom-switch-with-tailwind-and-vue), so check it out if you wish to understand how it works. 
 
-You will have to customize it while it only has a `value` props passed, and nothing more.
+## Simple usage
+First run `npm install @2alheure/vue-toggle`.  
+Then its usage is simple :  
+```js
+<template><Toggle v-model="isToggled" /></template>
 
-## How to use it
+<script>
+import Toggle from "@2alheure/vue-toggle";
 
-1. Put the `Toggle.vue` file into your `components/` directory.
-2. In the component in which you need to use it, import it via `import Toggle from "@/components/Toggle.vue";`
-3. Use it : `<Toggle v-model="foobar" />`
-That's all!
+export default {
+  components: {
+    Toggle
+  },
+  data() {
+    return {
+      isToggled: false
+    }
+  }
+};
+</script>
+```
+
+Please note the `v-model` directive, as it is usable as an input (and is one, intrinsically).
+
+## Props
+| Name    |  Type  |   Default value    | Description                                     |
+| :------ | :----: | :----------------: | ----------------------------------------------- |
+| name    | String | Some random string | The name of the inner input.                    |
+| colorOK | String |     `#0d9488`      | The color of the toggle when it is toggled ON.  |
+| colorKO | String |     `#6b7280`      | The color of the toggle when it is toggled OFF. |
+| width   | String |       `3rem`       | The width of the toggle.                        |
+| height  | String |      `1.5rem`      | The height of the toggle.                       |
