@@ -28,16 +28,16 @@
 <template>
   <div
     :style="{
-      backgroundColor: value ? colorOK : colorKO,
+      backgroundColor: modelValue ? colorOK : colorKO,
       width: width,
       height: height,
     }"
     class="vue-toggle"
-    @click="$emit('change', !value)"
+    @click="$emit('update:modelValue', !modelValue)"
   >
-    <input type="checkbox" :name="name" :checked="value" />
+    <input type="checkbox" :name="name" :checked="modelValue" />
     <div
-      :style="{ transform: `translateX(${value ? 100 : 0}%)` }"
+      :style="{ transform: `translateX(${modelValue ? 100 : 0}%)` }"
       class="toggler"
     />
   </div>
@@ -46,10 +46,11 @@
 <script>
 export default {
   model: {
-    event: "change",
+    prop: "modelValue",
+    event: "update:modelValue",
   },
   props: {
-    value: {
+    modelValue: {
       type: Boolean,
       default: false,
     },

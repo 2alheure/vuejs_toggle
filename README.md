@@ -2,8 +2,10 @@
 A simple Vue.js toggle button.
 
 - [Vue.js Toggle button](#vuejs-toggle-button)
-	- [Simple usage](#simple-usage)
-	- [Props](#props)
+  - [Simple usage](#simple-usage)
+  - [Props](#props)
+  - [Events](#events)
+  - [Events](#events-1)
 
 It has been inspired by [this article by ALEXANDRU STRATULAT](https://sandulat.com/blog/custom-switch-with-tailwind-and-vue), so check it out if you wish to understand how it works. 
 
@@ -32,10 +34,17 @@ export default {
 Please note the `v-model` directive, as it is usable as an input (and is one, intrinsically).
 
 ## Props
-| Name    |  Type  |   Default value    | Description                                     |
-| :------ | :----: | :----------------: | ----------------------------------------------- |
-| name    | String | Some random string | The name of the inner input.                    |
-| colorOK | String |     `#0d9488`      | The color of the toggle when it is toggled ON.  |
-| colorKO | String |     `#6b7280`      | The color of the toggle when it is toggled OFF. |
-| width   | String |       `3rem`       | The width of the toggle.                        |
-| height  | String |      `1.5rem`      | The height of the toggle.                       |
+| Name       |  Type   |   Default value    | Description                                            |
+| :--------- | :-----: | :----------------: | ------------------------------------------------------ |
+| name       | String  | Some random string | The name of the inner input.                           |
+| colorOK    | String  |     `#0d9488`      | The color of the toggle when it is toggled ON.         |
+| colorKO    | String  |     `#6b7280`      | The color of the toggle when it is toggled OFF.        |
+| width      | String  |       `3rem`       | The width of the toggle.                               |
+| height     | String  |      `1.5rem`      | The height of the toggle.                              |
+| modelValue | Boolean |      `false`       | The prop lnked to the `v-model` directive. (mandatory) |
+
+## Events
+## Events
+| Name              | Value type |      Value       | Description                           |
+| :---------------- | :--------: | :--------------: | ------------------------------------- |
+| update:modelValue |  Boolean   | The toggle value | Emitted each time the toggle switches |
