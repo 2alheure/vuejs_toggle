@@ -1,5 +1,6 @@
 # Vue.js Toggle button
-A simple Vue.js toggle button.
+A simple Vue.js toggle button.  
+This component is compatible with Vue 3.
 
 - [Vue.js Toggle button](#vuejs-toggle-button)
   - [Simple usage](#simple-usage)
